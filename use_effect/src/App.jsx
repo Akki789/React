@@ -19,6 +19,10 @@ import PreventEffect from "./Components/PreventEffect";
 import RunEffect from "./Components/RunEffect";
 import Longtext from "./Components/Longtext";
 import SelectEffect from "./Components/SelectedEffect";
+import RunEffect2 from "./Components/RunEffect2";
+import Fetch from "./Components/Fetch";
+import AutoCounter from "./Components/AutoCounter";
+import UseEffectTrigger from "./Components/UseEffectTrigger";
 
 
 function App() {
@@ -75,6 +79,18 @@ function App() {
 
         <h2>✅ Assignment 10 — Effect runs when the selected option changes</h2>
         <SelectEffect />
+
+        <h2>✅ Assignment 11 — Run effect only when BOTH values change at least once</h2>
+        <RunEffect2 />
+
+        <h2>✅ Assignment 12 — Fetch on Search Input (with Conditional Effect)</h2>
+        <Fetch />
+
+        <h2>✅ Assignment 13 — Auto-Counter with Cleanup</h2>
+        <AutoCounter />
+
+        <h2>✅ Assignment 14 — Props Change → UseEffect Trigger</h2>
+       <UseEffectTrigger />
       </div>
     </div>
   )
