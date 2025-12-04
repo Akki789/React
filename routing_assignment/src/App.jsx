@@ -12,11 +12,15 @@ import Dashboard from "./Pages/Dashboard";
 import Profile from "./Pages/Profile";
 import Settings from "./Pages/Settings";
 import Billing from "./Pages/Billing";
+import Navbar from "./Pages/Navbar Using Link/Navbar";
 
 function App() {
   return (
     <div className="app-shell">
       <div className="assignment-card">
+
+      <Navbar />
+
         <Routes>
           {/* Home */}
           <Route path="/" element={<Home />} />
