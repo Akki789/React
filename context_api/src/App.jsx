@@ -14,6 +14,9 @@ import Greeting from "./components/Greeting";
 import NotificationProvider from "./context/NotificationProvider";
 import NotificationBar from "./components/NotificationBar";
 import NotificationControls from "./components/NotificationControls";
+import CounterProvider from "./context/CounterProvider";
+import CounterDisplay from "./components/CounterDisplay";
+import CounterControls from "./components/CounterControls";
 
 
 function App() {
@@ -39,6 +42,11 @@ function App() {
           <NotificationBar />
           <NotificationControls />
         </NotificationProvider>
+
+        <CounterProvider>
+          <CounterDisplay />
+          <CounterControls />
+        </CounterProvider>
       </div>
     </div>
   );

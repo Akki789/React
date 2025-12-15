@@ -5,7 +5,7 @@ export default function NotificationProvider({children}) {
     const [msg, setMsg] = useState(null);
 
     function showMessage(text){
-        setMsg("Mesaage given")
+        setMsg(text)
     }
 
     function clearMessage(){

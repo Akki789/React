@@ -5,9 +5,9 @@ export default function NotificationControls() {
    let{showMessage, clearMessage} = useContext(NotificationContext)
   return (
     <div>
-        <button onClick={showMessage}>Show Message</button>
+        <button onClick={() =>showMessage("This is a notification")}>Show Message</button>
 
-        <button onClick={clearMessage}>Clear Message</button>
+        
     </div>
   )
 }
