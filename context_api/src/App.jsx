@@ -9,6 +9,8 @@ import AuthProvider from "./context/AuthProvider";
 import Navbar from "./components/Navbar";
 import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
+import LanguageProvider from "./context/LanguageProvider";
+import Greeting from "./components/Greeting";
 
 
 function App() {
@@ -25,6 +27,10 @@ function App() {
           <Dashboard />
         </AuthProvider>
 
+
+        <LanguageProvider>
+          <Greeting />
+        </LanguageProvider>
       </div>
     </div>
   );
