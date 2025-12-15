@@ -11,6 +11,9 @@ import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
 import LanguageProvider from "./context/LanguageProvider";
 import Greeting from "./components/Greeting";
+import NotificationProvider from "./context/NotificationProvider";
+import NotificationBar from "./components/NotificationBar";
+import NotificationControls from "./components/NotificationControls";
 
 
 function App() {
@@ -31,6 +34,11 @@ function App() {
         <LanguageProvider>
           <Greeting />
         </LanguageProvider>
+
+        <NotificationProvider>
+          <NotificationBar />
+          <NotificationControls />
+        </NotificationProvider>
       </div>
     </div>
   );
