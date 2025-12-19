@@ -17,6 +17,8 @@ import NotificationControls from "./components/NotificationControls";
 import CounterProvider from "./context/CounterProvider";
 import CounterDisplay from "./components/CounterDisplay";
 import CounterControls from "./components/CounterControls";
+import CombinedProvider from "./context/CombinedProvider";
+import SettingsPanel from "./components/SettingsPanel";
 
 
 function App() {
@@ -47,6 +49,10 @@ function App() {
           <CounterDisplay />
           <CounterControls />
         </CounterProvider>
+
+        <CombinedProvider>
+          <SettingsPanel />
+        </CombinedProvider>
       </div>
     </div>
   );

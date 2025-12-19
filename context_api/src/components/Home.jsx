@@ -12,6 +12,7 @@ export default function Home() {
         
     }}>
         <h2>Current Theme : {theme}</h2>
+        
         <button onClick={toggle}>Change Color</button>
     </div>
   )
