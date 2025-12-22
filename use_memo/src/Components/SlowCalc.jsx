@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useMemo, useState } from 'react'
 
 
 function calc(num){
@@ -18,7 +18,10 @@ export default function SlowCalc() {
     const [count, setCount] = useState(0);
     const [dark, setDark] = useState(false);
 
-    let result = calc(count);
+    // let result = calc(count);
+    let result = useMemo(() =>{
+        return calc(count);
+    }, [count])
 
     let theme = {
         background: dark ? "#333" : "#fff",
