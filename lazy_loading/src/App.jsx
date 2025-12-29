@@ -3,7 +3,6 @@ import "./App.css";
 import { Suspense } from "react";
 import Settings from "./pages/Settings";
 import { Link, Route, Routes } from "react-router-dom";
-// const Home =
 
 const Dashboard = React.lazy(() => import("./components/Dashboard"));
 const Profile = React.lazy(() => import("./components/Profile"));
@@ -25,26 +24,31 @@ function App() {
   return (
     <div className="app-shell">
       <div className="assignment-card">
+
+        <h1>Example</h1>
         <h2>Welcome to Dashboard</h2>
 
         <button onClick={() => setPage("dashboard")}>Dashboard</button>
         <button onClick={() => setPage("profile")}>Profile</button>
 
-        {/* <Suspense fallback={<h2>Loading....</h2>}>
+        <Suspense fallback={<h2>Loading....</h2>}>
           {page === "dashboard" && <Dashboard />}
           {page === "profile" && <Profile />}
-        </Suspense> */}
+        </Suspense>
 
-        {/* <Suspense fallback={<h2>Loading page...</h2>}>
+
+        <h1>Practice 1</h1>
+
+        <Suspense fallback={<h2>Loading page...</h2>}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/dashboards" element={<Dashboards />} />
           </Routes>
-        </Suspense> */}
+        </Suspense>
 
         
-        
+        <h1>Practice 2</h1>
          <nav>
             <Link to="/">Home</Link> |{" "}
             <Link to="about">About</Link> |{" "}
