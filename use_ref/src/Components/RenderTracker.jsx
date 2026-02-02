@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react'
 
 export default function RenderTracker() {
     const [count, setCount] = useState(0);
-    const renderCount = useRef(0)
+    const renderCount = useRef(count)
 
     renderCount.current = renderCount.current + 1;
     let time = new Date().toLocaleTimeString();
