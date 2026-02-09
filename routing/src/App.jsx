@@ -9,6 +9,7 @@ import Product from "./Pages/Product";
 import UserList from "./Components/UserList";
 import PostDetails from "./Components/PostDetails";
 
+
 function App() {
 
   return (
@@ -24,7 +25,6 @@ function App() {
           <Route path="/users/:id" element={<UserList />} />
           <Route path="/posts/:postId" element={<PostDetails />} />
         </Routes>
-
       </div>
     </div>
   );

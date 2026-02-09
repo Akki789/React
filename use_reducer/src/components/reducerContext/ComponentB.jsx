@@ -2,10 +2,10 @@ import React, { useContext } from 'react'
 import { CounterContext } from '../../App'
 
 export default function ComponentB() {
-   const {countState,countDispatch} =  useContext(CounterContext)
+   const {count,dispatch} =  useContext(CounterContext)
   return (
     <div>
-        <button onClick={() => countDispatch("DECREMENT")}>Decrease</button>
+        <button onClick={() => dispatch("DECREMENT")}>Decrease</button>
     </div>
   )
 }

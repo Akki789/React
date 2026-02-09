@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 
+
  const users = [
         {id:1, name:"Akash Kumar"},
         {id:2, name:"Vedant Kherade"},
@@ -8,6 +9,7 @@ import { Link, useNavigate } from "react-router-dom";
     ];
 
 export default function Home() {
+
   return (
     <>
         <h1>User List</h1>
